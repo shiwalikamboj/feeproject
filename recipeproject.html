@@ -162,9 +162,145 @@
         height:250px;
         position:absolute;
     }
+    p5{
+       width:100px;
+       height:100px;
+       border:2px solid black; 
+    }
+    #k {
+    width: 550px;
+    height: 550px;
+    border: 5px solid red;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+   
+   }
+   #ci{
+       
+            width: 250px;
+            height: 500px;
+            position: absolute;
+            top: 120%; /* Adjust the top position as needed */
+            left: 75%;
+        }
+    #ca{
+        width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 120%; /* Adjust the top position as needed */
+            left: 7%
+    }
+    #h{
+        font-size: 70px;
+        top:205%;
+        left:30%;
+        position: absolute;
+        color:black;
+        text-align: center;
+        text-decoration: underline;
+    }
+    #del {
+            position: absolute;
+            top: 255%; /* Adjust the top position as needed */
+            left: 15%;
+            transform: translate(-50%, -50%);
+            background-color: paleturquoise; /* Add a background color for better visibility */
+            padding: 20px;
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for better visibility */
+        }
+    #food {
+             width:300px;
+             height: 300px;
+            position: absolute;
+            top: 255%; /* Adjust the top position as needed */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: paleturquoise; /* Add a background color for better visibility */
+            padding: 20px;
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            /* Add a box shadow for better visibility */
+            
+        }
+        #order {
+            position: absolute;
+            top: 255%; /* Adjust the top position as needed */
+            left: 80%;
+            transform: translate(-50%, -50%);
+            background-color:paleturquoise; /* Add a background color for better visibility */
+            padding: 20px;
+            border: 2px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            /* Add a box shadow for better visibility */
+            
+        }
+        #last {
+            width:300px;
+            height:50px;
+            font-size: 30px;
+            position: absolute;
+            top: 295%; /* Adjust the top position as needed */
+            left: 30%;
+            transform: translate(-50%, -50%);
+            background-color:paleturquoise; /* Add a background color for better visibility */
+            padding: 20px;
+            border: 2px solid black;
+            border-radius:10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            text-align:center;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;/*kitni bar*/
+            animation-delay: 2s;/* start krne se phele kitna ruko*/
+            animation-timing-function: linear;
+            animation-direction:forwards;
+            animation-fill-mode: forwards;
+            
+            /* Add a box shadow for better visibility */
+            
+        }
+        @keyframes rightmovement{
+            from{
+                bottom:0;  
+                left:0;
+            }
+            to{
+                 bottom:0;
+                 right:1200px;
+            }
+        }
+        #rate {
+            width:300px;
+            height:50px;
+            font-size: 30px;
+            position: absolute;
+            top: 295%; /* Adjust the top position as needed */
+            left: 60%;
+            transform: translate(-50%, -50%);
+            background-color:paleturquoise; /* Add a background color for better visibility */
+            padding: 20px;
+            border: 2px solid black;
+            border-radius:10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            text-align:center;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;/*kitni bar*/
+            animation-delay: 2s;/* start krne se phele kitna ruko*/
+            animation-timing-function: linear;
+            animation-direction:forwards;
+            animation-fill-mode: forwards;
+            
+            /* Add a box shadow for better visibility */
+            
+        }
+       
 
-
-    </style>
+  </style>
 </head>
 <body>
     <div class="container">
@@ -198,11 +334,131 @@
         <div id="box3">
             <img src="/chef.jpg" id="c">
         </div>
-       
-            
-        
       
     </div>
+    <div class="con">
+        <img src="/sh.jpg" >
+        <div id="box4">
+            <img src="/time.jpg" id="k">
+        </div>
+        <div id="box5">
+            <img src="/chef.jpg" id="ci">
+        </div>
+        <div id="box6">
+            <img src="/special.png" id="ca">
+        </div>
+    </div>
+    <div class="cont">
+        <p id="h">DELIVERY SERVICE</p>
+        <img src="/sub.jpg">
+        <form id="del"> 
+            <p>Delivery Detail:</p><br>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" placeholder="Enter Name:"><br><br>
+            
+            <label for="email">Enter email:</label>
+            <input type="text" id="email" placeholder="Enter email"><br><br>
+            
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" placeholder="Enter password"><br><br>
+            
+            <label for="phone">Enter phone:</label>
+            <input type="tel" id="phone" placeholder="Enter phone no:"><br><br>
+            
+            <label for="add">Enter Address:</label>
+            <input type="text" id="add" placeholder="Enter Address:"><br><br>
+            
+            <label for="pin">Enter Pincode:</label>
+            <input type="text" id="pin" placeholder="Enter Pincode:"><br><br>
+            
+          
+            
+        
+       </form>
+       <form id="food">
+        <p>Pick Items:</p><br>
+        <label for="Punjabian Food">Punjabian Food:</label>
+        <select name="Punjabian Food" id="Punjabian Food">
+            <option value="dal makani">dal makani</option>
+            <option value="alu parantha">alu parantha</option>
+            <option value="veg thali">veg thali</option>
+            <option value="saag roti">saag roti</option>
+            <option value="shahi paneer">shahi paneer</option>
+            <option value="mix parantha">mix paranta</option>
+            <option value="tandoori chicken">tandoori chicken</option>
+        </select>
+        <br><br>
+        <label for="chinease Food">chinease Food:</label>
+        <select name="chinease Food" id="chinease Food">
+            <option value="burger">burger</option>
+            <option value="tikki">tikki</option>
+            <option value="pizza">pizza</option>
+            <option value="sandwich">sandwich</option>
+            <option value="macroni">macroni</option>
+            <option value="pasta">pasta</option>
+            <option value="momos">momos</option>
+        </select>
+        <br><br>
+        <label for="South Food">south Food:</label>
+        <select name="south Food" id="south Food">
+            <option value="dosa">dosa</option>
+            <option value="idli">idli</option>
+            <option value="upma">upma</option>
+            <option value="utpam">utpam</option>
+            <option value="vadda">vadda</option>
+            <option value="pasta">pasta</option>
+        </select>
+        <br><br>
+        <label for="Beverages">Beverages:</label>
+        <select name="Beverages" id="Beverages">
+            <option value="Milk shakes">Milk shakes</option>
+            <option value="Iced tea">Iced tea</option>
+            <option value="Orange juice">Orange juice</option>
+            <option value="Lemon tea">Lemon tea</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Cold tea">Cold tea</option>
+        </select>
+        <br><br>
+        <label for="Drinks">Drinks:</label>
+        <select name="Drinks" id="Drinks">
+            <option value="Soda water">Soda water</option>
+            <option value="Fresh juice">Fresh juice</option>
+            <option value="Cococola">Cococola</option>
+            <option value="Due">Due</option>
+            <option value="Guauva juice">Guava juice</option>
+            <option value="lichi juice">lichi juice</option>
+        </select>
+        <br><br>
+        <label for="Desserts">Desserts:</label>
+        <select name="Desserts" id="Desserts">
+            <option value="brownie">brownie</option>
+            <option value="pastry">pastry</option>
+        </select>
+        <br><br>
+        
+       </form>
+       <form id="order">
+        <p>Order details:</p>
+        <label for="person name">Person Name:</label>
+        <input type="text" id=" person name" placeholder="Enter Name:"><br><br>
+        <label for="person con">contact no:</label>
+        <input type="tel" id="person con" placeholder="Enter contact:"><br><br>
+        <label for="order id">order id:</label>
+        <input type="text" id="order id:" placeholder="Enter id:"><br><br>
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" placeholder="Enter Name:"><br><br>
+        <label for="order date">delivery date:</label>
+        <input type="text" id="order date" placeholder="Enter date:"><br><br>
+        <label for="order time">deliver time:</label>
+        <input type="text" id="order time" placeholder="Enter time:"><br><br>
+       </form>
+      
+    </div>
+    <p id="last">-Thanks for Visiting-</p>
+    <p id="rate">-Enjoy kamboj Point-</p>
+  
+    
+
     
 </body>
 </html>
